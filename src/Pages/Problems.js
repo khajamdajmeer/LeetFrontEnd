@@ -10,6 +10,9 @@ import stwo from '../Resources/Images/stwo.jpg';
 import sfour from '../Resources/Images/sfour.png';
 import sfive from '../Resources/Images/sfive.png';
 import List from '../Components/ProblemCards/List';
+import CalenderRight from '../Components/ProblemCards/CalenderRight';
+import TrendingCompany from '../Components/ProblemCards/TrendingCompany';
+import Footer from '../Components/Footer';
 const Problems = () => {
 
   const type = [
@@ -47,9 +50,9 @@ const Problems = () => {
 
   return (
     <>
-    <div className="container-fluid pt-4 d-flex justify-content-center flex-wrap row">
+    <div className="container-fluid pt-4 d-flex justify-content-center flex-wrap row px-0">
         <div className='col col-sm-12 col-md-9'>
-    <div className=" d-flex flex-wrap">
+    <div className=" d-flex flex-wrap pt-5">
       <TopCards image={cardone} />
       <TopCards image={cardtwo}/>
       <TopCards image={cardthree}/>
@@ -80,10 +83,12 @@ keyboard_double_arrow_left
       <List/>
     </div>
         </div>
-    <div className="col col-sm-12 col-md-3" style={{width:'200px'}}>
-        iam right
+    <div className="col col-sm-12 col-md-3 p-0" style={{width:'250px'}} >
+        <CalenderRight/>
+        <TrendingCompany/>
     </div>
     </div>
+    <Footer/>
     </>
   );
 }

@@ -4,3 +4,16 @@
 .card-hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.cal-hover li:hover{
+    background-color: rgb(187, 186, 186);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cal-hover li{
+    padding: 0 3px;
+    scale: 0.8;
+}
+.todayactive{
+    background-color: rgb(143, 153, 143);
+    border-radius: 20px;
+}
