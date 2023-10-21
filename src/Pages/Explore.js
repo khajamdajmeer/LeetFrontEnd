@@ -109,14 +109,18 @@ const Explore = () => {
             </div>
           </div>
           <div className='w-100 mb-5'>
-            <h3 className='text-secondary pt-5'>Featured</h3>
+            <div className="d-flex w-75 justify-content-between  pt-5 pb-2">
+            <h3 className='text-secondary'>Featured</h3>
+            <button className="btn shadow pc-0  border rounded-pill text-primary fw-bold">More</button>
+
+            </div>
             <div className="position-relative " >
-              <button className='position-absolute btn btn-light d-flex p-2 top-50' onClick={handleFeaturePrevScroll}>
+              <button className='position-absolute btn btn-light d-flex p-2 top-50 exp-btn' onClick={handleFeaturePrevScroll}>
                 <span class="material-symbols-outlined fs-1">
                   chevron_left
                 </span>
               </button>
-              <div ref={FeatureScrollRef} className='d-flex d-flex align-items-center h-auto overflow-x-auto explor-card-scroll' id='Featured-translate' style={{ transform: '' }}>
+              <div ref={FeatureScrollRef} className='d-flex d-flex align-items-center h-auto overflow-x-auto explor-card-scroll' id='Featured-translate' style={{scrollBehavior:'smooth' }}>
                 {FeatureData.map((ele, index) => {
                   return (
                     <ExploreCard heading={ele.title} image={ele.image} chapter={ele.chapter} items={ele.items} />
@@ -125,7 +129,7 @@ const Explore = () => {
                 })}
 
               </div>
-              <button className='position-absolute btn btn-light d-flex p-2 top-50 end-0' onClick={handleFeatureNextScroll}>
+              <button className='position-absolute btn btn-light d-flex p-2 top-50 end-0 exp-btn' onClick={handleFeatureNextScroll}>
                 <span class="material-symbols-outlined fs-1" style={{ transform: 'rotate(180deg)' }} >
                   chevron_left
                 </span>
@@ -136,14 +140,18 @@ const Explore = () => {
 
 
           <div className='w-100 mb-5'>
-            <h3 className='text-secondary pt-5'>Interview</h3>
+          <div className="d-flex w-75 justify-content-between  pt-5 pb-2">
+            <h3 className='text-secondary'>Interview</h3>
+            <button className="btn shadow pc-0  border rounded-pill text-primary fw-bold">More</button>
+
+            </div>
             <div className="position-relative " >
-              <button className='position-absolute btn btn-light d-flex p-2 top-50' onClick={handleInterviewPrevScroll}>
+              <button className='position-absolute btn btn-light d-flex p-2 top-50 exp-btn' onClick={handleInterviewPrevScroll}>
                 <span class="material-symbols-outlined fs-1">
                   chevron_left
                 </span>
               </button>
-              <div ref={InterviewScrollRef} className='d-flex d-flex align-items-center h-auto overflow-x-auto explor-card-scroll' id='Featured-translate' style={{ transform: '' }}>
+              <div ref={InterviewScrollRef} className='d-flex d-flex align-items-center h-auto overflow-x-auto explor-card-scroll' id='Featured-translate' style={{ scrollBehavior:'smooth' }}>
                 {IterviewData.map((ele, index) => {
                   return (
                     <ExploreCard heading={ele.title} image={ele.image} chapter={ele.chapter} items={ele.items} />
@@ -152,13 +160,16 @@ const Explore = () => {
                 })}
 
               </div>
-              <button className='position-absolute btn btn-light d-flex p-2 top-50 end-0' onClick={handleInterviewNextScroll}>
+              <button className='position-absolute btn btn-light d-flex p-2 top-50 end-0 exp-btn' onClick={handleInterviewNextScroll}>
                 <span class="material-symbols-outlined fs-1" style={{ transform: 'rotate(180deg)' }} >
                   chevron_left
                 </span>
               </button>
             </div>
           </div>
+
+
+         
         </div>
       </div>
       <Footer/>
