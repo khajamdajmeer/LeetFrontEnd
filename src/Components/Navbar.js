@@ -13,7 +13,7 @@ const Navbar = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul className="navbar-nav w-50  me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav w-50   mb-2 mb-lg-0">
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">Explore</Link>
         </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
       
       </ul>
 
-      <ul className="navbar-nav w-50 justify-content-end text-end me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav d-flex flex-row  w-50 justify-content-end text-end me-auto mb-2 mb-lg-0">
       <li className="nav-item px-2">
           <a className="nav-link" href="/">
           <span class="material-symbols-outlined">

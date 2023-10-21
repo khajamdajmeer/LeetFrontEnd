@@ -1249,31 +1249,31 @@ const ProblemList = [
 
   return (
     <>
-      <div className="position-relative" style={{Width:'700px',overflowX:'auto',maxHeight:'1000px',overflowY:'auto'}}>
-        <div className='position-sticky top-0' style={{backgroundColor:'#ffff'}}>
+      <div className="position-relative scroll-none" style={{Width:'700px',overflowX:'auto',maxHeight:'900px',overflowY:'auto'}}>
+        <div className='position-sticky top-0 responsive-width' style={{backgroundColor:'#ffff'}}>
 
-        <div className="d-flex  justify-content-between py-2">
-            <select className='px-4 border rounded bg-light text-secondary mx-2' name="aka" id="">
+        <div className="d-flex flex-wrap justify-content-between py-2 responsive-width">
+            <select className='px-4 my-1 border rounded bg-light text-secondary mx-2' name="aka" id="">
                 <option value="">List</option>
             </select>
-            <select className='px-4 border rounded bg-light text-secondary mx-2' name="aka" id="">
+            <select className='px-4 my-1 border rounded bg-light text-secondary mx-2' name="aka" id="">
                 <option value="">Difficulty</option>
             </select>
-            <select className='px-4 border rounded bg-light text-secondary mx-2' name="aka" id="">
+            <select className='px-4 my-1 border rounded bg-light text-secondary mx-2' name="aka" id="">
                 <option value="">Status</option>
             </select>
-            <select className='px-4 border rounded bg-light text-secondary mx-2' name="aka" id="">
+            <select className='px-4 my-1 border rounded bg-light text-secondary mx-2' name="aka" id="">
                 <option value="">Tags</option>
             </select>
-            <input type="text" className='border rounded px-2 mx-2' placeholder='Search' aria-label='search'/>
-            <button className="btn btn-primary mx-2">search</button>
-            <button className="btn btn-secondary mx-2 d-flex flex-nowrap">
-            <span class="material-symbols-outlined ">
+            <input type="text" className='border rounded px-2 my-1 mx-2' placeholder='Search' aria-label='search'/>
+            <button className="btn btn-primary my-1 mx-2">search</button>
+            <button className="btn btn-light my-1 mx-2 d-flex flex-nowrap">
+            <span class="material-symbols-outlined px-1">
 shuffle
 </span> <span>PickOne</span>
             </button>
         </div>
-        <div className="d-flex py-2  text-secondary border-bottom">
+        <div className="d-flex py-2  text-secondary border-bottom responsive-width">
             <div className="w-50 d-flex">
                 <div className="w-25">Status</div>
                 <div className="w-75">Title</div>
@@ -1289,7 +1289,7 @@ shuffle
 
         {ProblemList.slice(startindex,endindex).map((ele,index)=>{
             return(
-<div className="d-flex py-2 text-capitalize  ">
+<div className="d-flex py-2 text-capitalize responsive-width" >
             <div className="w-50 d-flex">
                 <div className="w-25"><span class="material-symbols-outlined" style={{color:'orange'}}>
 lock
@@ -1315,7 +1315,7 @@ lock
 
       <div className="container-fluid justify-content-center py-2">
         <div className="container d-flex justify-content-center flex-wrap">
-        <button className="btn  mx-2 py-0 d-flex align-items-center justify-content-center p-0" onClick={hanldePrev}>
+        <button className="btn   mx-2 py-0 d-flex align-items-center justify-content-center p-0" onClick={hanldePrev}>
             <span class="material-symbols-outlined" style={{transform:'rotate(90deg)',color:'grey'}}>
 expand_more
 </span>

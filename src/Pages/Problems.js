@@ -79,11 +79,11 @@ keyboard_double_arrow_left
 {showingtype.length>7 ? 'colapse' :'expand'}
         </button>
     </div>
-    <div>
+    <div className='' style={{overflow:"auto"}}>
       <List/>
     </div>
         </div>
-    <div className="col col-sm-12 col-md-3 p-0" style={{width:'250px'}} >
+    <div className="col col-sm-12 col-md-3 p-0" style={{maxWidth:'250px'}} >
         <CalenderRight/>
         <TrendingCompany/>
     </div>

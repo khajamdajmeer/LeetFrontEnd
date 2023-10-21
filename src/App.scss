@@ -17,3 +17,28 @@
     background-color: rgb(143, 153, 143);
     border-radius: 20px;
 }
+#root{
+    padding: 0;
+}
+@media (max-width:520px) {
+    
+    .responsive-width{
+        width: 700px;
+        justify-content: flex-start !important;
+        
+    }
+    .scroll-none::-webkit-scrollbar{
+        // display: none;
+        width: 4px;
+        height: 4px;
+    }
+    .scroll-none::-webkit-scrollbar-thumb{
+        background-color: rgb(109, 109, 109);
+
+    }
+}
+
+.explor-card-scroll::-webkit-scrollbar{
+    display: none;
+
+}
